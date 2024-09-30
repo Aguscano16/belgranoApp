@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+    color: black;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    transition: background-color 0.5s ease;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#belgranoFlag {
+    max-width: 30%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    margin: 10px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #007BFF;
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+@media (max-width:600px){
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    button {
+        font-size: 0.8rem;
+    }
+}
