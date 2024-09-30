@@ -26,6 +26,14 @@ body {
     max-width: 30%;
     height: auto;
     margin-bottom: 20px;
+    opacity: 20px;
+    transform: translateY(-20px);
+    transition: opacity 0.5s, transform 0.5s;
+}
+
+body.loaded #belgranoFlag {
+    opacity: 1; /* Se vuelve visible */
+    transform: translateY(0); /* Se desplaza a su posición original */
 }
 
 h1 {
@@ -35,13 +43,14 @@ h1 {
 
 button {
     padding: 10px 20px;
-    font-size: 1rem;
-    margin: 10px;
+    font-size: 16px;
+    margin: 16px;
     cursor: pointer;
     border: none;
     border-radius: 5px;
     background-color: #007BFF;
     color: white;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
     transition: background-color 0.3s ease;
 }
 
